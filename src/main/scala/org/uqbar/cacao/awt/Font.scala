@@ -1,6 +1,6 @@
 package org.uqbar.cacao.awt
 
-import org.uqbar.math.vectors.Vector
+import org.uqbar.math.spaces.R2._
 import org.uqbar.cacao.FontModifier
 import org.uqbar.cacao.Font
 import java.awt.{ Font => JavaFont }

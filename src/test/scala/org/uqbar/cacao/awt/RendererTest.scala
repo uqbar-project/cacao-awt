@@ -1,16 +1,22 @@
 package org.uqbar.cacao.awt
 
+import java.awt.Canvas
+import java.awt.{Color => AWTColor}
+import java.awt.Dimension
+import java.awt.Graphics2D
+import java.awt.Toolkit
+
+import scala.language.implicitConversions
+
 import org.scalatest.FreeSpec
 import org.scalatest.Matchers
-import javax.swing._
-import java.awt.Toolkit
-import java.awt.{ Color => AWTColor }
-import org.uqbar.math.vectors._
 import org.uqbar.cacao.Circle
-import java.awt.Canvas
-import java.awt.Dimension
 import org.uqbar.cacao.Color
-import java.awt.Graphics2D
+import org.uqbar.math.spaces.R2._
+
+import org.uqbar.cacao.awt.implicits._
+
+import javax.swing._
 
 class RendererTest extends FreeSpec with Matchers {
 

@@ -1,16 +1,20 @@
 package org.uqbar.cacao.awt
 
-import org.scalatest.FreeSpec
-import org.scalatest.Matchers
-import javax.swing._
-import java.awt.Toolkit
-import java.awt.{ Color => AWTColor }
-import org.uqbar.math.vectors._
-import org.uqbar.cacao.Circle
 import java.awt.Canvas
+import java.awt.{Color => AWTColor}
 import java.awt.Dimension
-import org.uqbar.cacao.Color
 import java.awt.Graphics2D
+import java.awt.Toolkit
+
+import scala.language.implicitConversions
+
+import org.scalatest.FreeSpec
+import org.uqbar.cacao.Circle
+import org.uqbar.cacao.Color
+import org.uqbar.math.spaces.R2._
+import org.uqbar.cacao.awt.implicits._
+
+import javax.swing._
 
 object RenderExample extends App {
 	def mkWindow = new JFrame {
